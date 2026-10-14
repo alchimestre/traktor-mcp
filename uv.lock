@@ -671,7 +671,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "mcp", specifier = ">=2.3,<3" },
-    { name = "traktor-nml", editable = "../traktor-nml" },
+    { name = "traktor-nml", git = "https://github.com/alchimestre/traktor-nml?tag=v0.1.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -680,16 +680,10 @@ dev = [{ name = "pytest", specifier = ">=8" }]
 [[package]]
 name = "traktor-nml"
 version = "0.1.0"
-source = { editable = "../traktor-nml" }
+source = { git = "https://github.com/alchimestre/traktor-nml?tag=v0.1.0#bff438500c3d9f9bfe19669ab14637e7c93dd7b9" }
 dependencies = [
     { name = "mutagen" },
 ]
-
-[package.metadata]
-requires-dist = [{ name = "mutagen" }]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8" }]
 
 [[package]]
 name = "truststore"

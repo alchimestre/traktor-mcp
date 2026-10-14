@@ -50,12 +50,19 @@ It reads the same `config.toml` the `traktor-nml` command does — the collectio
 and where a pipeline's job state lives — so one file configures both. `--config` reads another one. Nothing in
 it is a secret.
 
-## Development
-
-`traktor-mcp` depends on a `traktor-nml` checkout beside it (`../traktor-nml` in `pyproject.toml`), so clone
-both into the same parent directory:
+## Install
 
 ```sh
+uv sync                                              # a virtualenv, from a checkout
+uv tool install git+https://github.com/alchimestre/traktor-mcp
+```
+
+`traktor-nml` is installed from its own repository at a released tag (see `pyproject.toml`), so this project
+installs alone. To work on both at once, put the checkouts side by side and install the library editable, so
+the server sees your edits:
+
+```sh
+uv pip install -e ../traktor-nml
 uv run pytest
 ```
 

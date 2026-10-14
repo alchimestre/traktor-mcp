@@ -25,11 +25,11 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/traktor_mcp"]
 
-# In development the two checkouts sit side by side. Once traktor-nml is published this can name its
-# repository instead — `traktor-nml = { git = "https://github.com/alchimestre/traktor-nml" }` — and the
-# package installs on its own.
+# The library this server speaks for, from its own repository at a released tag: a clone of this project alone
+# installs. Working on both at once, override it with the checkout beside you —
+# `uv pip install -e ../traktor-nml` — rather than editing this file.
 [tool.uv.sources]
-traktor-nml = { path = "../traktor-nml", editable = true }
+traktor-nml = { git = "https://github.com/alchimestre/traktor-nml", tag = "v0.1.0" }
 
 [dependency-groups]
 dev = ["pytest>=8"]
