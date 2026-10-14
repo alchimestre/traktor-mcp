@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# This machine's configuration and working notes: kept on disk, never published.
+config.toml
+AGENTS.md
