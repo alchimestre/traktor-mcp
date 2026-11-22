@@ -1,5 +1,7 @@
 # traktor-mcp
 
+<!-- mcp-name: io.github.alchimestre/traktor-mcp -->
+
 Inspect and reconcile your Traktor collection from an [MCP](https://modelcontextprotocol.io/) client.
 Uses [traktor-nml](https://github.com/alchimestre/traktor-nml) to update `collection.nml` when audio files are replaced or added, without editing XML by hand.
 
