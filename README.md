@@ -7,7 +7,7 @@ Uses [traktor-nml](https://github.com/alchimestre/traktor-nml) to update `collec
 
 | Requirement or limit | Detail |
 |---|---|
-| Runtime | Python 3.13+, [uv](https://docs.astral.sh/uv/getting-started/installation/), Git |
+| Runtime | Python 3.13+, [uv](https://docs.astral.sh/uv/getting-started/installation/) |
 | Client | Local MCP server support over stdio |
 | Files | Access to the Traktor collection and music directories on the same machine |
 | Scope | Collection maintenance, not playback or live deck control |
@@ -16,10 +16,10 @@ Uses [traktor-nml](https://github.com/alchimestre/traktor-nml) to update `collec
 
 ## Setup
 
-1. Install from GitHub:
+1. Install from PyPI:
 
    ```sh
-   uv tool install git+https://github.com/alchimestre/traktor-mcp
+   uv tool install traktor-mcp
    ```
 
 2. Check that the executable is on your PATH:
