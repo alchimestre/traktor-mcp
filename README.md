@@ -102,3 +102,14 @@ To work on the library alongside the server, override it with a sibling checkout
 ```sh
 uv pip install -e ../traktor-nml
 ```
+
+## Publishing
+
+1. Configure a PyPI Trusted Publisher for this GitHub repository, workflow `publish.yml`, environment `pypi`.
+2. Dispatch the workflow from `main` with the release tag or commit SHA as `ref`:
+
+   ```sh
+   gh workflow run publish.yml --repo alchimestre/traktor-mcp --ref main -f ref=v0.1.0
+   ```
+
+3. Check the workflow result before announcing the release. Published PyPI versions cannot be overwritten.
