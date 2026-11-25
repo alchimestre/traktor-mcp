@@ -29,7 +29,7 @@ packages = ["src/traktor_mcp"]
 # installs. Working on both at once, override it with the checkout beside you —
 # `uv pip install -e ../traktor-nml` — rather than editing this file.
 [tool.uv.sources]
-traktor-nml = { git = "https://github.com/alchimestre/traktor-nml", tag = "v0.1.0" }
+traktor-nml = { git = "https://github.com/alchimestre/traktor-nml", tag = "v0.2.0" }
 
 [dependency-groups]
 dev = ["pytest>=8"]
