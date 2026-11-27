@@ -7,3 +7,4 @@ __pycache__/
 # This machine's configuration and working notes: kept on disk, never published.
 config.toml
 AGENTS.md
+.truthiness/
